@@ -36,7 +36,18 @@ internal struct ClosureEndIndentationRuleExamples {
         "    },\n" +
         "    anotherClosure: { y in\n" +
         "        print(y)\n" +
-        "    })"
+        "    })",
+        "self.asdf(asdf: .asdf, asdfasdfasdf: {\n" +
+        "    asdfasdfasdfasdf })\n" +
+        "{ result in\n" +
+        "    guard case .success = result else {\n" +
+        "        return\n" +
+        "    }\n" +
+        "\n" +
+        "    self.asdfasdfasdf(asdfasdfasdfasdf: true) {\n" +
+        "        asdfasdfASDFasdfasdf\n" +
+        "    }\n" +
+        "}"
     ]
 
     static let triggeringExamples = [
